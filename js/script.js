@@ -7,6 +7,7 @@ Applicare l’autoplay allo slider: ogni 3 secondi, cambia immagine automaticame
 
 */
 
+// INIT APP VUE
 const app = new Vue({
 
   el: '#app',
@@ -18,8 +19,16 @@ const app = new Vue({
     counter: 0
   },
 
+  // MOUNTED
+  mounted(){
+
+    setInterval(this.nextImg, 3000);
+
+  },
+
   methods: {
 
+    // PREV IMG FUNCTION
     prevImg(){
       this.counter--
       console.log(this.counter);
@@ -30,6 +39,7 @@ const app = new Vue({
       
     },
 
+    // NEXT IMG FUNCTION
     nextImg(){
       this.counter++
       console.log(this.counter);
