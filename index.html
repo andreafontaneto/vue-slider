@@ -16,11 +16,11 @@
       <div class="slider">
 
         <div class="item">
-          <img src="img/01.jpg" alt="landscape">
+          <img :src="immagini[counter]" alt="landscape">
         </div>
 
-        <div class="prev">&larr;</div>
-        <div class="next">&rarr;</div>
+        <div @click="prevImg" class="prev">&larr;</div>
+        <div @click="nextImg" class="next">&rarr;</div>
 
       </div>
 
