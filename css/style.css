@@ -3,3 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  width: 50%;
+  position: relative;
+}
+
+.item img{
+  width: 100%;
+}
+
+.next, .prev{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev{
+  margin-left: 10px;
+  left: 0;
+}
+
+.next{
+  margin-right: 10px;
+  right: 0;
+}
