@@ -22,16 +22,23 @@ const app = new Vue({
 
     prevImg(){
       this.counter--
-      console.log(counter);
+      console.log(this.counter);
 
+      if(this.counter < 0){
+        this.counter = this.immagini.length - 1;
+      }
       
     },
 
     nextImg(){
       this.counter++
-      console.log(counter);
+      console.log(this.counter);
+
+      if(this.counter > this.immagini.length - 1){
+        this.counter = 0;
+      }
     }
 
   }
 
-})
+});
